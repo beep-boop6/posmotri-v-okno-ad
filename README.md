@@ -1,0 +1,1 @@
+https://github.com/beep-boop6/posmotri-v-okno-ad.git
