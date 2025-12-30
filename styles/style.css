@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    block-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* Основные стили страницы */
+.page {
+    display: flex;
+    inline-size: 1200px;
+    block-size: 100%;
+    margin: auto;
+    color: #fff;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+    background-color: #1b1919;
+}
+
+/* Скрытые элементы */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Основной контент */
+.content {}
+
+.result {}
+.result__video-container {}
+.result__video {}
+
+/* Форма поиска */
+.search-form {}
+.search-form__fieldset {}
+.search-form__fieldset-title {}
+.search-form__label {}
+.search-form__label-text {}
+.search-form__textfield {}
+.search-form__checkbox-list {}
+.search-form__checkbox {}
+.search-form__pseudo-checkbox {}
+.search-form__submit-button {}
+
+.content__details {}
+.content__accent {}
+.content__list-container {}
+.content__list {}
+.content__list-item {}
+.content__card-link {}
+.content__video-card {}
+.content__video-card-description-container {}
+.content__video-card-title {}
+.content__video-card-description {}
+.content__video-card-thumbnail {}
+
+/* Заголовок */
+.title {}
+
+/* Кнопки */
+.button {}
+.more-button {}
+
+/* Кастомный скроллбар */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgb(217 217 217 / 10%);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #D9D9D9;
+}
