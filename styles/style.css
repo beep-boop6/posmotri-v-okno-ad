@@ -46,15 +46,12 @@ ol {
 /* Скрытые элементы */
 .visually-hidden {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
+    inline-size: 1px;
+    block-size: 1px;
     overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
 /* Основной контент */
@@ -91,7 +88,12 @@ ol {
     justify-content: space-between;
 }
 .search-form__fieldset {}
-.search-form__fieldset-title {}
+.search-form__fieldset-title {
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 100%;
+}
 .search-form__label {
 
 }
@@ -109,7 +111,10 @@ ol {
     height: 100%;
     width: 100%;
 }
-.content__accent {}
+.content__accent {
+    color: #545050;
+
+}
 .content__list-container {
     height: 298px;
     display: flex;
@@ -123,7 +128,10 @@ ol {
 .content__list-item {
 
 }
-.content__card-link {}
+.content__card-link {
+    text-decoration: none;
+    color: #fff;
+}
 .content__video-card {
     display: flex;
     width: 390px;
@@ -133,8 +141,33 @@ ol {
 .content__video-card-description-container {
     flex-grow: 1;
 }
-.content__video-card-title {}
-.content__video-card-description {}
+.content__video-card-title {
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 196px;
+}
+.content__video-card-description {
+    font-family: Fira Sans Condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 2;
+
+}
 .content__video-card-thumbnail {
     height: 100%;
     width: 194px;
@@ -145,6 +178,14 @@ ol {
 /* Заголовок */
 .title {
     margin-bottom: 26px;
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 75px;
+    line-height: 94%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+
 }
 
 /* Кнопки */
