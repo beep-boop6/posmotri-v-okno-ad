@@ -37,6 +37,10 @@ ol {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 18px;
     background-color: #1b1919;
+
+    justify-content: center;
+    align-items: center;
+
 }
 
 /* Скрытые элементы */
@@ -54,27 +58,61 @@ ol {
 }
 
 /* Основной контент */
-.content {}
+.content {
+    display: grid;
+    grid-template-columns: 711px 399px;
+    grid-column-gap: 30px;
+}
 
-.result {}
-.result__video-container {}
-.result__video {}
+.result {
+    display: grid;
+    grid-template-rows: 386px 54px;
+    grid-row-gap: 16px;
+    position: relative;
+    top: 70px;
+    height: 456px;
+}
+.result__video-container {
+    height: 386px;
+}
+.result__video {
+    width: 100%;
+}
 
 /* Форма поиска */
-.search-form {}
+.search-form {
+    /*display: grid;
+    grid-template-columns: 225px 212px 194px;
+    grid-column-gap: 40px;*/
+    display: flex;
+    justify-content: space-between;
+}
 .search-form__fieldset {}
 .search-form__fieldset-title {}
-.search-form__label {}
+.search-form__label {
+
+}
 .search-form__label-text {}
 .search-form__textfield {}
 .search-form__checkbox-list {}
 .search-form__checkbox {}
 .search-form__pseudo-checkbox {}
-.search-form__submit-button {}
+.search-form__submit-button {
+    align-self: flex-start;
 
-.content__details {}
+}
+
+.content__details {
+    height: 100%;
+    width: 100%;
+}
 .content__accent {}
-.content__list-container {}
+.content__list-container {
+    height: 298px;
+    display: flex;
+    overflow: scroll;
+
+}
 .content__list {}
 .content__list-item {}
 .content__card-link {}
@@ -85,7 +123,9 @@ ol {
 .content__video-card-thumbnail {}
 
 /* Заголовок */
-.title {}
+.title {
+    margin-bottom: 26px;
+}
 
 /* Кнопки */
 .button {}
