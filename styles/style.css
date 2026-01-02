@@ -74,9 +74,12 @@ ol {
 }
 .result__video-container {
     height: 386px;
+    width: 100%;
 }
 .result__video {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 /* Форма поиска */
@@ -110,17 +113,34 @@ ol {
 .content__list-container {
     height: 298px;
     display: flex;
-    overflow: scroll;
+    overflow-y: scroll;
 
 }
-.content__list {}
-.content__list-item {}
+.content__list {
+    display: grid;
+    gap: 30px;
+}
+.content__list-item {
+
+}
 .content__card-link {}
-.content__video-card {}
-.content__video-card-description-container {}
+.content__video-card {
+    display: flex;
+    width: 390px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.content__video-card-description-container {
+    flex-grow: 1;
+}
 .content__video-card-title {}
 .content__video-card-description {}
-.content__video-card-thumbnail {}
+.content__video-card-thumbnail {
+    height: 100%;
+    width: 194px;
+    object-fit: cover;
+    object-position: center;
+}
 
 /* Заголовок */
 .title {
